@@ -1,9 +1,11 @@
+import React from 'react'
+import {useMoralis} from 'react-moralis';
 import './App.css';
 
 function App() {
   return (
-    <div className="App-header">
-      <h1>Product registratie</h1>
+    <div>
+      <h1>Test</h1>
     </div>
   );
 }
