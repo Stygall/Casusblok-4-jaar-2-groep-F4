@@ -7,7 +7,7 @@ import Product from './components/product/product';
 
 function App() {
   return(
-    <div>
+    <div className="App">
       <div className="header">
         <Header/>
       </div>

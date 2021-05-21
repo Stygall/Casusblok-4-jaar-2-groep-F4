@@ -6,19 +6,26 @@ function Product(){
         <div>
             <form className="productForm">
                 <label>
-                    Artikelnummer:
-                    <input type="text" name="artNum"/><br/>
+                    Artikelnummer: 
+                    <input  placeholder="Artikelnummer" className="input" type="text" name="artNum" required/><br/>
                 </label>
                 <label>
                     Categorie:
-                    <input type="text" name="categorie"/><br/>
+                    <select placeholder="Categorie" className="input" type="text" name="categorie" required>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Randapparatuur">Randapparatuur</option>
+                        <option value="Decoratie">Decoratie</option>
+                        <option value="Spellen analoog">Spellen analoog</option>
+                        <option value="Spellen digitaal">Spellen digitaal</option>
+                        <option value="Keukengerei">Keukengerei</option>
+                    </select><br/>
                 </label>
                 <label>
-                    Creditwaarde:
-                    <input type="text" name="credits"/><br/>
+                    Credits:
+                    <input placeholder="Credits" className="input" type="number" name="credits" required/><br/>
                 </label>
 
-                <input type="submit" value="Product toevoegen"/>
+                <input className="input" type="submit" value="Product toevoegen"/>
             </form>
         </div>
     )
