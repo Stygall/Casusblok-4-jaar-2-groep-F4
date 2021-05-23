@@ -7,7 +7,11 @@ function Product(){
             <form className="productForm">
                 <label>
                     Artikelnummer: 
-                    <input  placeholder="Artikelnummer" className="input" type="text" name="artNum" required/><br/>
+                    <input  placeholder="Artikelnummer" className="input" type="number" min="0" name="artNum" required/><br/>
+                </label>
+                <label>
+                    Productnaam:
+                    <input placeholder="Productnaam" className="input" type="text" name="prodName" required/><br/>
                 </label>
                 <label>
                     Categorie:
@@ -22,7 +26,11 @@ function Product(){
                 </label>
                 <label>
                     Credits:
-                    <input placeholder="Credits" className="input" type="number" name="credits" required/><br/>
+                    <input placeholder="Credits" className="input" type="number" min="0" name="credits" required/><br/>
+                </label>
+                <label>
+                    Aantal:
+                    <input placeholder="Aantal" className="input" type="number" min="1" name="amount" required/><br/>
                 </label>
 
                 <input className="input" type="submit" value="Product toevoegen"/>
