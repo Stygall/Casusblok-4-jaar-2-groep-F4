@@ -1,10 +1,11 @@
 # Casusblok-4-jaar-2-groep-F4
+
 installeer de volgende programmas (link bijgevoegd)
-- nodejs
+- **nodejs**
     https://nodejs.org/en/download/ 
-- git (installeer ook bash mee)
+- **git** (installeer ook bash mee)
     https://git-scm.com/downloads
-- visual studio code
+- **visual studio code**
     https://code.visualstudio.com/download
 
 open vervolgens een folder in vs code en voer de volgende commands uit in de ingebouwde bash terminal
@@ -12,15 +13,15 @@ open vervolgens een folder in vs code en voer de volgende commands uit in de ing
     cd Casusblok-4-jaar-2-groep-F4
 
 installeer vervolgens de volgende nodejs packages (eventueel met de onderstaande commands in de bash terminal van vs code)
-- react
+- **react**
     npm install react
-- moralis
+- **moralis**
     npm install moralis
-- react-moralis
+- **react-moralis**
     npm install react-moralis
-- react-dom
+- **react-dom**
     npm install react-dom
-- react-scripts
+- **react-scripts**
     npm install react-scripts
 
 dan run vervolgens de deployement script
