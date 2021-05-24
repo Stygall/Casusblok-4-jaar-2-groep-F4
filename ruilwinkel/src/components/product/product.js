@@ -1,5 +1,6 @@
 import React from 'react';
 import './product.css';
+import {useMoralis, useNewMoralisObject} from 'react-moralis';
 
 function Product(){
     return(
@@ -47,7 +48,7 @@ function Product(){
                     
                 </label>
                 <label>
-                    <input className="input" type="submit" value="Product toevoegen"/>
+                    <input className="input" type="submit"/>
                 </label>
                 
             </form>
