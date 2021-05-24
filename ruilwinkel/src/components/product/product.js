@@ -11,14 +11,12 @@ function Product(){
                         Artikelnummer:<br/>
                         <input  placeholder="Artikelnummer" className="input" type="number" min="0" name="artNum" required/><br/>
                     </p> 
-                    
                 </label>
                 <label>
                     <p className="text">
                         Productnaam:<br/>
                         <input placeholder="Productnaam" className="input" type="text" name="prodName" required/><br/>
                     </p>                  
-                    
                 </label>
                 <label>
                     <p className="text">
@@ -44,15 +42,11 @@ function Product(){
                         Aantal:<br/>
                         <input placeholder="Aantal" className="input" type="number" min="1" name="amount" required/><br/>
                     </p>
-                    
-                    
                 </label>
                 <label>
                     <input className="input" type="submit"/>
                 </label>
-                
             </form>
-            
         </div>
     )
 }
