@@ -8,21 +8,19 @@ installeer de volgende programmas (link bijgevoegd)
 - **visual studio code**
     https://code.visualstudio.com/download
 
-open vervolgens een folder in vs code en voer de volgende commands uit in de ingebouwde bash terminal
-    git clone https://github.com/DaniMonfrance/Casusblok-4-jaar-2-groep-F4
-    cd Casusblok-4-jaar-2-groep-F4
 
-installeer vervolgens de volgende nodejs packages (eventueel met de onderstaande commands in de bash terminal van vs code)
-- **react**
-    npm install react
-- **moralis**
-    npm install moralis
-- **react-moralis**
-    npm install react-moralis
-- **react-dom**
-    npm install react-dom
-- **react-scripts**
-    npm install react-scripts
+- Start vscode en open je nieuwe folder **(CTRL+O)**
+
+**open een nieuwe git bash terminal en voer de volgende command in:**
+- git clone https://github.com/DaniMonfrance/Casusblok-4-jaar-2-groep-F4
+
+- Open de Casusblok-4-jaar-2-groep-F4 folder wederom met **CTRL+O**
+
+**in de git bash terminal:**
+
+- git checkout Frontend
+- Wacht totdat de git in vscode geladen is
+- cd ruilwinkel
 
 dan run vervolgens de deployement script
     wip
