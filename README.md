@@ -39,4 +39,4 @@ dan run vervolgens de test script
 
 nu zou alles in orde moeten zijn en kun je de volgende command runnen in de bash terminal van vs code
 
-    ```npm start```
+```npm start```
