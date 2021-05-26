@@ -22,6 +22,7 @@ installeer de volgende programmas (link bijgevoegd)
 ```git checkout Frontend```
 
 - Wacht totdat de git in vscode geladen is
+
 ```cd ruilwinkel```
 
 dan run vervolgens de deployement script
@@ -37,4 +38,5 @@ dan run vervolgens de test script
     wip
 
 nu zou alles in orde moeten zijn en kun je de volgende command runnen in de bash terminal van vs code
+
     ```npm start```
