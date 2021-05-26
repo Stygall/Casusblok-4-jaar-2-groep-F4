@@ -9,13 +9,13 @@ installeer de volgende programmas (link bijgevoegd)
     https://code.visualstudio.com/download
 
 
-- Start vscode en open je nieuwe folder **(CTRL+O)**
+- Start vscode en open je nieuwe folder **(CTRL+K+O)**
 
 **open een nieuwe git bash terminal en voer de volgende command in:**
 
   ```git clone https://github.com/DaniMonfrance/Casusblok-4-jaar-2-groep-F4```
 
-- Open de Casusblok-4-jaar-2-groep-F4 folder wederom met **CTRL+O**
+- Open de Casusblok-4-jaar-2-groep-F4 folder wederom met **CTRL+K+O**
 
 **in de git bash terminal:**
 
