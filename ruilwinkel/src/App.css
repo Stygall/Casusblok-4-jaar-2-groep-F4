@@ -4,3 +4,11 @@
   color: #ffffff;
 }
 
+.nav-item {
+  font-size: 18px;
+  color: white;
+}
+
+.nav-item:visited {
+  color: lightblue;
+}

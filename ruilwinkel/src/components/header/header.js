@@ -1,12 +1,12 @@
-import React from 'react'
-import './header.css'
+import React from "react";
+import "./header.css";
 
-function Header(){
-    return(
-        <div className="App-header">
-            <h1>Product registratie</h1>
-        </div>
-    )
+function Header() {
+  return (
+    <div className="App-header">
+      <h1>Ruilwinkel Vaals</h1>
+    </div>
+  );
 }
 
 export default Header;
