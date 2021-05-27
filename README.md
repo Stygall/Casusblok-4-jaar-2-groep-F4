@@ -25,9 +25,9 @@ installeer de volgende programmas (link bijgevoegd)
 
 ```cd ruilwinkel```
 
-dan run vervolgens de deployement script
-    wip
-    
+- dan run vervolgens de server deployement scripten in deze volgorde
+**in de git bash terminal:**
+    ```moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev --region amsterdam --network mainnet --evmProviders chainId 0x38```
 dan run vervolgens de connection script
     wip
 
