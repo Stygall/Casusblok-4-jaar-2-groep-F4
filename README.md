@@ -25,6 +25,9 @@ installeer de volgende programmas (link bijgevoegd)
 
 ```cd ruilwinkel```
 
+- Installeer de benodigde dependencies vanuit package.json
+```npm install```
+
 - dan run vervolgens de server deployement scripten in deze volgorde
 **in de git bash terminal:**
     ```moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev --region amsterdam --network mainnet --evmProviders 0x38```
