@@ -19,7 +19,7 @@ installeer de volgende programmas (link bijgevoegd)
 
 **in de git bash terminal:**
 
-```git checkout Frontend```
+```git checkout Development```
 
 - Wacht totdat de git in vscode geladen is
 
