@@ -27,6 +27,7 @@ class Product extends React.Component {
 
   submit() {
     console.log(this.state);
+    alert(this.state.prodName + " is toegevoegd!");
   }
 
   render() {
@@ -76,6 +77,7 @@ class Product extends React.Component {
                 required
                 onChange={this.handleInputChange}
               >
+                <option value="Undefined"></option>
                 <option value="Laptop">Laptop</option>
                 <option value="Randapparatuur">Randapparatuur</option>
                 <option value="Decoratie">Decoratie</option>
