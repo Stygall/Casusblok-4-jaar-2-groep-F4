@@ -1,4 +1,4 @@
-name: Launch Moralis
+name: Launch Moralis dev
 on: [push]
 jobs:
   launch_moralis:
