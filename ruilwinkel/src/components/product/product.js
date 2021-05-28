@@ -1,9 +1,9 @@
 import React from "react";
+import { Moralis } from "moralis";
 
 import "./product.css";
-import { useMoralis, useNewMoralisObject } from "react-moralis";
 
-class Product extends React.Component {
+class ProductForm extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -25,10 +25,17 @@ class Product extends React.Component {
     this.setState({ [name]: value });
   }
 
-  submit() {
-    console.log(this.state);
-    alert(this.state.prodName + " is toegevoegd!");
-  }
+  submit = async () => {
+    const Product = Moralis.Object.extend("Product");
+    const newProduct = new Product();
+    newProduct.set("Artikelnummer", this.state.artNum);
+    newProduct.set("Naam", this.state.prodName);
+    newProduct.set("Categorie", this.state.categorie);
+    newProduct.set("Prijs", this.state.credits);
+    newProduct.set("Voorraad", this.state.amount);
+
+    await newProduct.save();
+  };
 
   render() {
     return (
@@ -135,4 +142,4 @@ class Product extends React.Component {
   }
 }
 
-export default Product;
+export default ProductForm;
