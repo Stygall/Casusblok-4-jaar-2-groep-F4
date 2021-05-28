@@ -41,5 +41,10 @@ dan run vervolgens de test script
     wip
 
 nu zou alles in orde moeten zijn en kun je de volgende command runnen in de bash terminal van vs code
-
+**in de git bash terminal**
+*voor development omgeving*
 ```npm start```
+*voor production omgeving*
+```npm run build```
+```npm install -g serve```
+```serve -s build```
