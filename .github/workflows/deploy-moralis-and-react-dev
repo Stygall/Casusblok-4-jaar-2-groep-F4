@@ -1,5 +1,8 @@
 name: Deploy Moralis and React
-on: [push]
+on:
+  push:
+    branches:
+      - Development
 jobs:
   launch-moralis:
     runs-on: ubuntu-latest
