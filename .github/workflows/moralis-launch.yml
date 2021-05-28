@@ -17,5 +17,5 @@ jobs:
       - name: start moralis
         shell: bash
         working-directory: ruilwinkel
-        run: moralis-admin-cli create-server help
+        run: "moralis-admin-cli create-server help"
 
