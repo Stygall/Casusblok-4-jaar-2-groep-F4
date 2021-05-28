@@ -15,6 +15,7 @@ jobs:
         working-directory: ruilwinkel
         run: npm install moralis-admin-cli
       - name: start moralis
+        shell: bash
         working-directory: ruilwinkel/node_modules
-        run: bash moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev --region amsterdam --network mainnet
+        run: moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev --region amsterdam --network mainnet
 
