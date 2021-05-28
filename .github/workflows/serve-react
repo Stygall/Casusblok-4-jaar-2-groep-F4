@@ -1,4 +1,4 @@
-name: Moralis DB Prod Env launch
+name: Serve React
 on: [push]
 jobs:
   serve_react:
