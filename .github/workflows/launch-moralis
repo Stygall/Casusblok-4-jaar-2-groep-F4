@@ -1,4 +1,4 @@
-name: Moralis DB Prod Env launch
+name: Launch Moralis
 on: [push]
 jobs:
   launch_moralis:
