@@ -1,9 +1,5 @@
 name: Moralis launch
-on:
-  push:
-    branches:
-      - '*'
-      - '!main'
+on: [push]
 jobs:
   Moralis-Launch:
     runs-on: ubuntu-latest
