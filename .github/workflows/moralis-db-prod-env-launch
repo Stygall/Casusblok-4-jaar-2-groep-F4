@@ -1,7 +1,7 @@
 name: Moralis DB Prod Env launch
 on: [push]
 jobs:
-  install moralis db:
+  launch_moralis:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
