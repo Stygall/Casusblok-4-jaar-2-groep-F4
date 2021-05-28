@@ -1,4 +1,4 @@
-name: Moralis DB Dev Env launch
+name: Deploy Moralis and React
 on: [push]
 jobs:
   launch-moralis:
