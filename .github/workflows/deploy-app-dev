@@ -1,7 +1,7 @@
 name: Moralis DB Dev Env launch
 on: [push]
 jobs:
-  install moralis db:
+  launch-moralis:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,7 +18,7 @@ jobs:
         shell: bash
         working-directory: ruilwinkel
         run: moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev --region amsterdam --network mainnet --evmProviders 0x38
-  serve frontend:
+  serve-react:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
