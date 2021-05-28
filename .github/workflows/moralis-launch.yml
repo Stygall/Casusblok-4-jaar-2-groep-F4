@@ -13,9 +13,9 @@ jobs:
         run: ls
       - name: install node modules
         working-directory: ruilwinkel
-        run: npm install moralis-admin-cli
+        run: npm install -g moralis-admin-cli
       - name: start moralis
         shell: bash
         working-directory: ruilwinkel
-        run: "moralis-admin-cli create-server help"
+        run: moralis-admin-cli help
 
