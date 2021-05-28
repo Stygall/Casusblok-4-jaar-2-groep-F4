@@ -17,5 +17,4 @@ jobs:
       - name: start moralis
         shell: bash
         working-directory: ruilwinkel
-        run: moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev --region amsterdam --network mainnet --evmProviders 0x38
-
+        run: moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev2 --region amsterdam --network mainnet --evmProviders 0x38
