@@ -1,8 +1,10 @@
 name: Moralis launch
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Moralis-Launch:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./ruilwinkel
     steps:
-      - run: sh cd ruilwinkel
+      - run: sh npm install
       - run: echo  "completed switch to ruilwinkel directory"
