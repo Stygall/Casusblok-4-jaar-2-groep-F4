@@ -14,9 +14,6 @@ jobs:
       - name: install node modules
         working-directory: ruilwinkel
         run: npm install
-      - name: test node modules
-        working-directory: ruilwinkel
-        run: npm test
       - name: start moralis
         run: sh moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev --region amsterdam --network mainnet
 
