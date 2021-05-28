@@ -1,0 +1,33 @@
+name: Moralis DB Prod Env launch
+on: [push]
+jobs:
+  Moralis-Launch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Node.js 10.x
+        uses: actions/setup-node@master
+        with:
+          node-version: '14'
+      - name: find directory
+        run: ls
+      - name: install node modules
+        working-directory: ruilwinkel
+        run: npm install -g moralis-admin-cli
+      - name: start moralis
+        shell: bash
+        working-directory: ruilwinkel
+        run: moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWV --region amsterdam --network mainnet --evmProviders 0x38
+
+    © 2021 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Bl
