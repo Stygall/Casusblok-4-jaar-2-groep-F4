@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: sh cd ruilwinkel
-      - echo:  "completed switch to ruilwinkel directory"
+      - run: echo  "completed switch to ruilwinkel directory"
