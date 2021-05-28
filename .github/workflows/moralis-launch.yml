@@ -3,8 +3,6 @@ on: [push]
 jobs:
   Moralis-Launch:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./ruilwinkel
     steps:
       - uses: actions/setup-node@v2
         with:
