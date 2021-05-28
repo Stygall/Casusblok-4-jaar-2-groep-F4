@@ -10,7 +10,7 @@ jobs:
           node-version: '14'
       - name: find directory
         working-directory: ./ruilwinkel
-        run: pwd & ls
+        run: pwd
       - name: install node modules
         working-directory: ./ruilwinkel
         run: npm install
