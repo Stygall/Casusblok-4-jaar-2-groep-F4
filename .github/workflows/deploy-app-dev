@@ -1,0 +1,41 @@
+name: Moralis DB Dev Env launch
+on: [push]
+jobs:
+  install moralis db:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Node.js 10.x
+        uses: actions/setup-node@master
+        with:
+          node-version: '14'
+      - name: find directory
+        run: ls
+      - name: install moralis admin cli
+        working-directory: ruilwinkel
+        run: npm install -g moralis-admin-cli
+      - name: launch moralis db server
+        shell: bash
+        working-directory: ruilwinkel
+        run: moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev --region amsterdam --network mainnet --evmProviders 0x38
+  serve frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Node.js 10.x
+        uses: actions/setup-node@master
+        with:
+          node-version: '14'
+      - name: find directory
+        run: ls
+      - name: install node modules
+        working-directory: ruilwinkel
+        run: npm install -g serve
+      - name: build front end
+        shell: bash
+        working-directory: ruilwinkel
+        run: npm run build     
+      - name: serve front end
+        shell: bash
+        working-directory: ruilwinkel
+        run: serve -s build
