@@ -4,10 +4,17 @@ jobs:
   Moralis-Launch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v2
+      - name: install node
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: pwd
-      - run: ls
-      - run: npm install
-      - run: npm test
+      - name: find directory
+        working-directory: ./ruilwinkel
+        run: pwd
+        run: ls 
+      - name: install node modules
+        working-directory: ./ruilwinkel
+        run: pwd
+        run: ls
+        run: npm install
+        run: npm test
