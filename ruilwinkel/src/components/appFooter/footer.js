@@ -18,6 +18,7 @@ function Footer() {
         <li>Donderdag 10.00-14.00</li>
         <li>Elke eerste zaterdag van de maand 11.00-15.00</li>
       </p>
+      <img src="RuilwinkelLogo.png" />
     </div>
   );
 }
