@@ -1,7 +1,10 @@
 .App {
-  text-align: center;
-  background-color: #282c4f;
+  background-color: rgb(58, 29, 75);
   color: #ffffff;
+}
+
+.nav {
+  text-align: center;
 }
 
 .nav-item {
@@ -11,4 +14,8 @@
 
 .nav-item:visited {
   color: lightblue;
+}
+
+.footer {
+  text-align: left;
 }

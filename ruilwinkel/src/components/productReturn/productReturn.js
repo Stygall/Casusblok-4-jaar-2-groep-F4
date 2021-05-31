@@ -17,24 +17,30 @@ class Return extends React.Component {
       <div>
         <form className="productForm">
           <label>
-            <p className="text">Gebruiker</p>
-            <input
-              className="input "
-              placeholder="Gebruiker"
-              type="text"
-              name="user"
-              required
-            />
+            <p className="text">
+              Gebruiker
+              <br />
+              <input
+                className="input "
+                placeholder="Gebruiker"
+                type="text"
+                name="user"
+                required
+              />
+            </p>
           </label>
           <label>
-            <p className="text">Product ID</p>
-            <input
-              className="input"
-              placeholder="productID"
-              type="text"
-              name="prodId"
-              required
-            />
+            <p className="text">
+              Product ID
+              <br />
+              <input
+                className="input"
+                placeholder="productID"
+                type="text"
+                name="prodId"
+                required
+              />
+            </p>
           </label>
         </form>
       </div>
