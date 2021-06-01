@@ -1,4 +1,9 @@
 .footer-styling {
-  background-color: rgb(112, 60, 196);
-  color: white;
+  background-color: rgb(199, 189, 216);
+  color: black;
+  border: 1px solid black;
+}
+
+.footer-text {
+  margin-left: 20px;
 }
