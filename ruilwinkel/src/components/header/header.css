@@ -9,6 +9,6 @@
   border: 3px solid black;
 }
 
-p {
+.p {
   font-size: calc(10px + 2vmin);
 }

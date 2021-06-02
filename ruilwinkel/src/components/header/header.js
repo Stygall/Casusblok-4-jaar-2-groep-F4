@@ -6,7 +6,7 @@ import "./header.css";
 function Header() {
   return (
     <div className="App-header">
-      <p>
+      <p className="p">
         <img src={RuilwinkelLogo} alt="Logo" height="140" width="200" />
         Ruilwinkel Vaals
       </p>
