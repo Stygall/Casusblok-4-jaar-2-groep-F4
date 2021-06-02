@@ -1,12 +1,14 @@
 .App-header {
-    background-color: #282c34;
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    border: 3px solid black;
-  }
-  
+  background-color: #282c34;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 3px solid black;
+}
+
+p {
+  font-size: calc(10px + 2vmin);
+}

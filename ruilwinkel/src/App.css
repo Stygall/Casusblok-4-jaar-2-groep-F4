@@ -3,10 +3,6 @@
   color: #ffffff;
 }
 
-.nav {
-  text-align: center;
-}
-
 .nav-item {
   font-size: 18px;
   color: white;
@@ -16,6 +12,6 @@
   color: lightblue;
 }
 
-.footer {
-  text-align: left;
+nav {
+  text-align: center;
 }

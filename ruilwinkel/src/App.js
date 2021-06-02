@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <nav className="nav">
+        <nav>
           <Link className="nav-item" to="/">
             Home
           </Link>
@@ -38,7 +38,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        <Footer className="footer" />
+        <Footer />
       </div>
     </Router>
   );
