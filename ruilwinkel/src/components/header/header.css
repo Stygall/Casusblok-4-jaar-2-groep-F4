@@ -1,12 +1,11 @@
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(199, 189, 216);
   max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: white;
-  border: 3px solid black;
+  color: black;
+  border: 3px solid grey;
 }
 
 .p {
