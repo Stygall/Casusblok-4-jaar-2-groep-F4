@@ -17,11 +17,9 @@ function App() {
           <Link className="nav-item" to="/">
             Home
           </Link>
-          &nbsp;-&nbsp;
           <Link className="nav-item" to="/product">
             Productregistratie
           </Link>
-          &nbsp;-&nbsp;
           <Link className="nav-item" to="/retour">
             Retourneren
           </Link>
