@@ -1,4 +1,4 @@
-name: Launch Moralis dev
+name: development test 2
 on: [push]
 jobs:
   launch_moralis:
@@ -9,15 +9,6 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: '14'
-      - name: find directory
-        run: ls
-      - name: install moralis admin cli
-        working-directory: ruilwinkel
-        run: npm install -g moralis-admin-cli
-      - name: launch moralis db server
-        shell: bash
-        working-directory: ruilwinkel
-        run: moralis-admin-cli create-server --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --serverName RWVDev --region amsterdam --network mainnet --evmProviders 0x38
       - uses: actions/checkout@v2
       - name: Set Node.js 10.x
         uses: actions/setup-node@master
@@ -37,7 +28,7 @@ jobs:
         run: npm run build     
       - name: replace index.html
         shell: bash
-        working-directory: ruilwinkel
+        working-directory: ruilwinkel/build
         run: mv index.hml 200.html
       - name: surge frontend
         shell: bash
