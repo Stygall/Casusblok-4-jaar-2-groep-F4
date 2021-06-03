@@ -14,15 +14,23 @@ function App() {
       <div className="App">
         <Header />
         <nav>
-          <Link className="nav-item" to="/">
-            Home
-          </Link>
-          <Link className="nav-item" to="/product">
-            Productregistratie
-          </Link>
-          <Link className="nav-item" to="/retour">
-            Retourneren
-          </Link>
+          <ul>
+            <li>
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="nav-link" to="/product">
+                Productregistratie
+              </Link>
+            </li>
+            <li>
+              <Link className="nav-link" to="/retour">
+                Retourneren
+              </Link>
+            </li>
+          </ul>
         </nav>
 
         <Switch>

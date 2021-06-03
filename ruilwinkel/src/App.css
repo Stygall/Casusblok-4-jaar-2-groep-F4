@@ -1,15 +1,51 @@
 .App {
   background-color: rgb(58, 29, 75);
   color: #ffffff;
-}
-
-.nav-item {
-  font-size: 18px;
-  color: lightblue;
-  margin: 10px;
+  margin: 0 auto;
+  font-weight: 400;
 }
 
 nav {
-  margin: 20px;
-  text-align: center;
+  float: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: lightblue;
+}
+
+.nav-link::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: lightblue;
+
+  position: absolute;
+  top: 0;
+
+  transition: all ease-in-out 250ms;
+}
+
+.nav-link:hover::before {
+  width: 100%;
 }
