@@ -26,11 +26,7 @@ jobs:
         shell: bash
         working-directory: ruilwinkel
         run: npm run build     
-      - name: replace index.html
-        shell: bash
-        working-directory: ruilwinkel/build
-        run: mv index.hml 200.html
       - name: surge frontend
         shell: bash
         working-directory: ruilwinkel
-        run: surge
+        run: surge --project ./build --domain ruilwinkel-githooks.surge.sh
