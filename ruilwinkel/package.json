@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gulp-surge": "^0.1.4",
     "moralis": "0.0.22",
     "moralis-admin-cli": "^2.0.9",
     "react": "^17.0.2",
@@ -46,7 +47,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./ --domain ruilwinkel-githooks.surge.sh"
+      "pre-push": "surge --project ./build --domain ruilwinkel-githooks.surge.sh"
     }
   }
 }

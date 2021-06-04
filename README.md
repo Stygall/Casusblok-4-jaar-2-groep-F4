@@ -71,4 +71,4 @@ _in de git bash terminal_
 
 `npm run build`
 
-`serve -s build`
+`surge --project ./build --domain ruilwinkel.surge.sh  `
