@@ -32,4 +32,4 @@ jobs:
         env:
           SURGE: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        run: surge --project ./build --domain ruilwinkel.surge.sh 
+        run: surge --project ./build --domain ruilwinkel.surge.sh --token ${{secrets.SURGE_TOKEN}} --token ${{secrets.SURGE_LOGIN}}
