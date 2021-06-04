@@ -29,10 +29,10 @@ jobs:
       - name: surge frontend
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+          SURGE: ${{ secrets.SURGE_PASSWORD }}
         shell: bash
         working-directory: ruilwinkel
-        run: surge --project ./build --domain ruilwinkel2.surge.sh --token ${{ secrets.SURGE_LOGIN }} --token ${{ secrets.SURGE_TOKEN }}
+        run: surge --project ./build --domain ruilwinkel2.surge.sh --token ${{ secrets.SURGE_LOGIN }} --token ${{ secrets.SURGE_PASSWORD }}
       - name: find token
         shell: bash
         working-directory: ruilwinkel
