@@ -30,6 +30,6 @@ jobs:
         shell: bash
         working-directory: ruilwinkel
         env:
-          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+          SURGE: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: surge --project ./build --domain ruilwinkel.surge.sh 
