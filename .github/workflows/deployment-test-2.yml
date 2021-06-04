@@ -29,6 +29,7 @@ jobs:
       - name: surge frontend
         shell: bash
         working-directory: ruilwinkel
-        SURGE_LOGIN: 1959514smeets@zuyd.nl
-        SURGE_TOKEN: ff1bc4dc2eb1c16f9f5c4e8e7cb38cbf
+        env:
+          SURGE: ${{ secrets.SURGE_TOKEN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_LOGIN }}
         run: surge --project ./build --domain ruilwinkel.surge.sh 
