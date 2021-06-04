@@ -29,4 +29,12 @@ jobs:
       - name: surge frontend
         shell: bash
         working-directory: ruilwinkel
-        run: surge --project ./build --domain ruilwinkel.surge.sh 
+        run: surge --project ./build --domain ruilwinkel.surge.sh --token ${{SURGE_LOGIN}} --token ${{SURGE_TOKEN}}
+      - name: find token
+        shell: bash
+        working-directory: ruilwinkel
+        run: echo $SURGE_TOKEN
+      - name: find token
+        shell: bash
+        working-directory: ruilwinkel
+        run: echo $SURGE_lOGIN
