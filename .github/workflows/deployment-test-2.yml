@@ -29,4 +29,4 @@ jobs:
       - name: surge frontend
         shell: bash
         working-directory: ruilwinkel
-        run: surge --project ./build --domain ruilwinkel-githooks.surge.sh --email 1959514smeets@zuyd.nl --password Team5Guys
+        run: surge --project ./build --domain ruilwinkel-githooks.surge.sh 
