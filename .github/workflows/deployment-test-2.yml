@@ -1,5 +1,5 @@
 name: development test 2
-on: [push]
+on: 
 jobs:
   launch_moralis:
     runs-on: ubuntu-latest
