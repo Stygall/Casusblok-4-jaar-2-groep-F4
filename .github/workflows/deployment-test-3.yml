@@ -11,11 +11,17 @@ jobs:
           node-version: '14'
       - name: install node modules
         working-directory: ruilwinkel
-        run: npm install
+        run: 
+          npm install
       - name: install moralis admin cli
         working-directory: ruilwinkel
-        run: npm install -global surge
-      - name: run frontend
+        run: 
+          npm install -global surge
+      - name: build frontend
+        working-directory: ruilwinkel
+        run: 
+          npm run build
+      - name: surge frontend
         shell: bash
         working-directory: ./ruilwinkel/build
         run: 
