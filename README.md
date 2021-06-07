@@ -16,7 +16,7 @@
 
 _open een nieuwe git bash terminal en voer de volgende command in:_
 
-`git clone https://github.com/DaniMonfrance/Casusblok-4-jaar-2-groep-F4`
+`git clone https://github.com/Stygall/Casusblok-4-jaar-2-groep-F4`
 
 - Open de Casusblok-4-jaar-2-groep-F4 folder
 
