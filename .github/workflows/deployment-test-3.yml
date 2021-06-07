@@ -1,0 +1,22 @@
+name: development test 2
+on: [push]
+jobs:
+  launch_moralis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Node.js 10.x
+        uses: actions/setup-node@master
+        with:
+          node-version: '14'
+      - name: install node modules
+        working-directory: ruilwinkel
+        run: npm install
+      - name: install moralis admin cli
+        working-directory: ruilwinkel
+        run: npm install -global surge
+      - name: run frontend
+        shell: bash
+        working-directory: ./ruilwinkel/build
+        run: 
+          surge
