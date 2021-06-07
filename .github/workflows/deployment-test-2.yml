@@ -19,5 +19,5 @@ jobs:
         shell: bash
         working-directory: ./ruilwinkel/public
         run: 
-          moralis-admin-cli deploy --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw --d 2l8hm6ropitg.moralis.io
-
+          moralis-admin-cli deploy --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw &&
+          '0'
