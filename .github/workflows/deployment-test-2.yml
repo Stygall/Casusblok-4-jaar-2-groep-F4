@@ -9,35 +9,15 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: '14'
-      - uses: actions/checkout@v2
-      - name: Set Node.js 10.x
-        uses: actions/setup-node@master
-        with:
-          node-version: '14'
-      - name: find directory
-        run: ls
       - name: install node modules
         working-directory: ruilwinkel
         run: npm install
-      - name: install surge
+      - name: install moralis admin cli
         working-directory: ruilwinkel
-        run: npm install --global surge
-      - name: build front end
+        run: npm install -global moralis-admin-cli
+      - name: run frontend
         shell: bash
-        working-directory: ruilwinkel
-        run: npm run build     
-      - name: surge frontend
-        env:
-          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
-          SURGE: ${{ secrets.SURGE_PASSWORD }}
-        shell: bash
-        working-directory: ruilwinkel
-        run: surge --project ./build --domain ruilwinkel2.surge.sh --token ${{ secrets.SURGE_LOGIN }} --token ${{ secrets.SURGE_PASSWORD }}
-      - name: find token
-        shell: bash
-        working-directory: ruilwinkel
-        run: echo ${{ secrets.SURGE_TOKEN }}
-      - name: find token
-        shell: bash
-        working-directory: ruilwinkel
-        run: echo ${{ secrets.SURGE_LOGIN }}
+        working-directory: ./ruilwinkel/public
+        run: 
+          moralis-admin-cli deploy --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw &&
+          '0'
