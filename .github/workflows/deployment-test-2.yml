@@ -15,10 +15,6 @@ jobs:
       - name: install moralis admin cli
         working-directory: ruilwinkel
         run: npm install -global moralis-admin-cli
-      - name: build front end
-        shell: bash
-        working-directory: ruilwinkel
-        run: npm run build     
       - name: run frontend
         shell: bash
         working-directory: ruilwinkel
