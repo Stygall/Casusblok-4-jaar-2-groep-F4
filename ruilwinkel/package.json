@@ -1,6 +1,5 @@
 {
   "name": "ruilwinkel",
-  "homepage": "https://stygall.github.io/Casusblok-4-jaar-2-groep-F4/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,8 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -47,14 +45,5 @@
     "gh-pages": "^3.2.0",
     "git-scripts": "0.2.1",
     "surge": "latest"
-  },
-  "git": {
-    "scripts": {
-      "pre-push": "surge --project ./build --domain ruilwinkel-githooks.surge.sh"
-    }
-  },
-  
-
-
-
+  }
 }
