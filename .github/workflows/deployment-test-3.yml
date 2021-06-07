@@ -26,3 +26,8 @@ jobs:
         working-directory: ./ruilwinkel/build
         run: 
           surge
+      - name: surge frontend 2
+        shell: bash
+        working-directory: ./ruilwinkel/build
+        run: 
+          1959514smeets@zuyd.nl
