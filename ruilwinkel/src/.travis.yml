@@ -1,5 +1,0 @@
-﻿deploy:
-  provider: surge
-  domain: example.surge.sh
-  SURGE_LOGIN: 1959514smeets@zuyd.nl
-  SURGE_TOKEN: ff1bc4dc2eb1c16f9f5c4e8e7cb38cbf
