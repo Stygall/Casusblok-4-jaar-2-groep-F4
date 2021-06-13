@@ -22,3 +22,5 @@ jobs:
         working-directory: ./ruilwinkel/build
         run: surge ./ ${{ secrets.SURGE_DOMAIN }}  --token ${{ secrets.SURGE_TOKEN }} 
       - run: echo "Please visit => ${{ secrets.SURGE_DOMAIN }}"
+
+
