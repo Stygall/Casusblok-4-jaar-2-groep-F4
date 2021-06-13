@@ -15,7 +15,8 @@ jobs:
       - name: install moralis admin cli
         working-directory: ruilwinkel
         run: npm install -global surge
-      - run: npm run build
+      - working-directory: ruilwinkel
+        run: npm run build
       - name: run frontend
         shell: bash
         working-directory: ./ruilwinkel/build
