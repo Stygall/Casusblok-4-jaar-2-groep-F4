@@ -71,4 +71,7 @@ _in de git bash terminal_
 
 `npm run build`
 
+ 
+`moralis-admin-cli deploy --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw` daarna `0`
+
 `surge --project ./build --domain ruilwinkel.surge.sh  `
