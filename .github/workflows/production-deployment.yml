@@ -14,9 +14,11 @@ jobs:
         run: npm install
       - name: install moralis admin cli
         working-directory: ruilwinkel
-        run: npm install -global moralis-admin-cli
+        run: npm install -global surge
+      - working-directory: ruilwinkel
+        run: npm run build
       - name: run frontend
         shell: bash
-        working-directory: ./ruilwinkel/public
-        run: 
-          moralis-admin-cli deploy --moralisApiKey z4VED4PyG39Zpvv --moralisApiSecret 67e0A5yLw8xEpJw -d 2l8hm6ropitg
+        working-directory: ./ruilwinkel/build
+        run: surge ./ ${{ secrets.SURGE_DOMAIN }}  --token ${{ secrets.SURGE_TOKEN }} 
+      - run: echo "Please visit => ${{ secrets.SURGE_DOMAIN }}"
